@@ -2,39 +2,105 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Contact | Amateur De Fantaisie</title>
+  <title>Contact - ⛩️ Amateur De Fantaisie</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contactez Amateur De Fantaisie pour la création, le déploiement et l’hébergement de bots.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <header class="navbar">
+    <div class="logo">⛩️ Amateur De Fantaisie</div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="bots/index.html">Bots</a>
+      <a href="services/index.html">Services</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="contact.html" class="btn-nav active">Contact</a>
+    </nav>
+  </header>
 
-<header class="navbar">
-  <div class="logo">⛩️ Amateur De Fantaisie</div>
-  <nav>
-    <a href="index.html">Accueil</a>
-    <a href="bots/index.html">Bots</a>
-    <a href="services/index.html">Services</a>
-    <a href="contact.html" class="btn-nav">Contact</a>
-  </nav>
-</header>
+  <section class="hero">
+    <h1 data-aos="fade-up">Contact & Support</h1>
+    <p data-aos="fade-up" data-aos-delay="150">Rejoins-nous sur toutes les plateformes</p>
+  </section>
 
-<section class="section">
-  <h1>Contact</h1>
-  <p>
-    Une question, un bot à déployer ou un projet spécifique ?  
-    Contactez-nous via le formulaire ou directement par nos canaux officiels.
-  </p>
+  <section class="section contact-section">
+    <div class="contact-grid" data-aos="fade-up">
+      <div class="contact-card">
+        <div class="contact-icon">📝</div>
+        <h3>Formulaire</h3>
+        <form class="contact-form">
+          <input type="text" placeholder="Pseudo Discord / Nom" required>
+          <input type="email" placeholder="Email" required>
+          <select required>
+            <option value="">Service souhaité</option>
+            <option>Bot Discord</option>
+            <option>Bot Telegram</option>
+            <option>Hébergement</option>
+            <option>Support</option>
+          </select>
+          <textarea placeholder="Décris ton projet..." rows="5" required></textarea>
+          <button type="submit" class="btn-primary">Envoyer Message</button>
+        </form>
+      </div>
 
-  <div class="cards">
+      <div class="contact-links">
+        <h3 data-aos="fade-up" data-aos-delay="100">Nos Plateformes</h3>
+        
+        <div class="platform-grid">
+          <a href="https://discord.gg/YOUR_DISCORD" class="platform discord" data-aos="zoom-in">
+            <div class="platform-icon">💬</div>
+            <h4>Discord</h4>
+            <p>Support 24/7 • Commandes</p>
+          </a>
 
-    <!-- FORMULAIRE -->
-    <div class="card">
-      <h3>Formulaire de contact</h3>
+          <a href="https://t.me/YOUR_TELEGRAM" class="platform telegram" data-aos="zoom-in" data-aos-delay="100">
+            <div class="platform-icon">✈️</div>
+            <h4>Telegram</h4>
+            <p>Bot démo • Support rapide</p>
+          </a>
 
-      <form name="contact" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact">
+          <a href="#" class="platform whatsapp" data-aos="zoom-in" data-aos-delay="200">
+            <div class="platform-icon">📱</div>
+            <h4>WhatsApp</h4>
+            <p>Support mobile</p>
+          </a>
 
+          <a href="#" class="platform instagram" data-aos="zoom-in" data-aos-delay="300">
+            <div class="platform-icon">📸</div>
+            <h4>Instagram</h4>
+            <p>Mises à jour • Portfolio</p>
+          </a>
+
+          <a href="#" class="platform facebook" data-aos="zoom-in" data-aos-delay="400">
+            <div class="platform-icon">📘</div>
+            <h4>Facebook</h4>
+            <p>Communauté • Événements</p>
+          </a>
+
+          <a href="#" class="platform messenger" data-aos="zoom-in" data-aos-delay="500">
+            <div class="platform-icon">💙</div>
+            <h4>Messenger</h4>
+            <p>Chatbot démo</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>⛩️ Répondons en moins de 2h !</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/form.js"></script>
+  <script src="assets/js/integrations.js"></script>
+</body>
+</html>
         <input type="text" name="nom" placeholder="Votre nom" required>
         <input type="email" name="email" placeholder="Votre email" required>
         <textarea name="message" placeholder="Votre message" required></textarea>
