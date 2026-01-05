@@ -143,3 +143,38 @@ footer {
   padding: 30px;
   opacity: 0.6;
 }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .navbar nav a {
+    display: inline-block;
+    margin: 8px;
+  }
+
+  .hero {
+    padding: 70px 15px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .section {
+    padding: 60px 15px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing {
+    grid-template-columns: 1fr;
+  }
+}
