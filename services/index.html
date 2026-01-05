@@ -2,52 +2,129 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Services | Amateur De Fantaisie</title>
+  <title>Services - ⛩️ Amateur De Fantaisie</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
+  <header class="navbar">
+    <div class="logo">⛩️ Amateur De Fantaisie</div>
+    <nav>
+      <a href="../index.html">Accueil</a>
+      <a href="../bots/index.html">Bots</a>
+      <a href="index.html">Services</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#contact" class="btn-nav">Contact</a>
+    </nav>
+  </header>
 
-<header class="navbar">
-  <div class="logo">⛩️ Amateur De Fantaisie</div>
-  <nav>
-    <a href="../index.html">Accueil</a>
-    <a href="../bots/index.html">Bots</a>
-    <a href="index.html">Services</a>
-    <a href="../contact.html" class="btn-nav">Contact</a>
-  </nav>
-</header>
+  <section class="hero">
+    <h1 data-aos="fade-up">Nos Services Premium</h1>
+    <p data-aos="fade-up" data-aos-delay="150">De la création à l'hébergement 24/7</p>
+  </section>
 
-<section class="section">
-  <h1 data-aos="fade-up">Nos Services</h1>
-
-  <div class="cards">
-    <div class="card" data-aos="fade-up">
-      <h3>Création de bots</h3>
-      <a href="creation.html" class="btn-primary">En savoir plus</a>
+  <section class="section">
+    <h2 data-aos="fade-up">Services Complets</h2>
+    <div class="cards" data-aos="fade-up" data-aos-delay="150">
+      <div class="card">
+        <div class="card-icon">🎨</div>
+        <h3>Création Sur Mesure</h3>
+        <p>Bot 100% personnalisé selon tes besoins</p>
+        <span class="price">À partir de 49€</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">🚀</div>
+        <h3>Déploiement Pro</h3>
+        <p>Installation et configuration complète</p>
+        <span class="price">29€</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">☁️</div>
+        <h3>Hébergement 24/7</h3>
+        <p>Serveur dédié avec monitoring</p>
+        <span class="price">19€/mois</span>
+      </div>
     </div>
+  </section>
 
-    <div class="card" data-aos="fade-up" data-aos-delay="150">
-      <h3>Déploiement</h3>
-      <a href="deploiement.html" class="btn-primary">En savoir plus</a>
+  <section class="section pricing" id="tarifs">
+    <h2 data-aos="fade-up">Tarifs</h2>
+    <div class="pricing-cards" data-aos="fade-up" data-aos-delay="150">
+      <div class="pricing-card popular">
+        <div class="pricing-header">
+          <h3>Gratuit</h3>
+          <span class="badge">Débutant</span>
+        </div>
+        <div class="price">0€</div>
+        <ul>
+          <li>1 Bot Discord</li>
+          <li>Hébergement 12h/jour</li>
+          <li>Support basique</li>
+        </ul>
+        <a href="#contact" class="btn-primary">Commencer</a>
+      </div>
+      
+      <div class="pricing-card">
+        <div class="pricing-header">
+          <h3>Premium</h3>
+        </div>
+        <div class="price">49€ <span>/mois</span></div>
+        <ul>
+          <li>5 Bots multi-plateformes</li>
+          <li>Hébergement 24/7</li>
+          <li>Support prioritaire</li>
+          <li>Mises à jour automatiques</li>
+        </ul>
+        <a href="#contact" class="btn-primary">Choisir Premium</a>
+      </div>
+      
+      <div class="pricing-card">
+        <div class="pricing-header">
+          <h3>Entreprise</h3>
+        </div>
+        <div class="price">149€ <span>/mois</span></div>
+        <ul>
+          <li>Bots illimités</li>
+          <li>Serveur dédié</li>
+          <li>Support 24/7</li>
+          <li>API personnalisée</li>
+        </ul>
+        <a href="#contact" class="btn-primary">Contacter</a>
+      </div>
     </div>
+  </section>
 
-    <div class="card" data-aos="fade-up" data-aos-delay="300">
-      <h3>Accompagnement</h3>
-      <a href="accompagnement.html" class="btn-primary">En savoir plus</a>
+  <section class="section contact" id="contact">
+    <h2 data-aos="fade-up">Prêt à commencer ?</h2>
+    <form class="contact-form" data-aos="fade-up" data-aos-delay="150">
+      <input type="text" placeholder="Ton pseudo Discord" required>
+      <input type="email" placeholder="Email" required>
+      <select required>
+        <option value="">Choisis ton service</option>
+        <option>Création Bot Discord</option>
+        <option>Bot Telegram</option>
+        <option>Hébergement</option>
+        <option>Autre</option>
+      </select>
+      <textarea placeholder="Ton message..." rows="5" required></textarea>
+      <button type="submit" class="btn-primary">Envoyer 🚀</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2026 ⛩️ Amateur De Fantaisie ⛩️</p>
+      <div class="social-links">
+        <a href="#">discord.gg/amateurdefantaisie</a>
+        <a href="#">t.me/amateurdefantaisie</a>
+      </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<footer>
-  <p>© 2026 ⛩️ Amateur De Fantaisie ⛩️</p>
-</footer>
-
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script src="../assets/js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="form.js"></script>
 </body>
 </html>
