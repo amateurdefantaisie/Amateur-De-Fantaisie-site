@@ -1,40 +1,34 @@
 // Initialisation AOS
-AOS.init({
-  duration: 900,
-  once: false,
-  easing: 'ease-in-out'
-});
-
-// Animation boutons au hover
-document.querySelectorAll('.btn-primary, .btn-nav').forEach(btn => {
-  btn.addEventListener('mouseenter', () => {
-    btn.style.transform = 'scale(1.05)';
+document.addEventListener('DOMContentLoaded', function() {
+  AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100
   });
 
-  btn.addEventListener('mouseleave', () => {
-    btn.style.transform = 'scale(1)';
-  });
-});
-
-// Effet apparition progressive custom
-const revealElements = document.querySelectorAll('.card, .section');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = 1;
-      entry.target.style.transform = 'translateY(0)';
+  // Navbar scroll effect
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 100) {
+      navbar.style.background = 'rgba(0, 0, 0, 0.98)';
+      navbar.style.padding = '0.8rem 5%';
     } else {
-      entry.target.style.opacity = 0;
-      entry.target.style.transform = 'translateY(40px)';
+      navbar.style.background = 'rgba(0, 0, 0, 0.95)';
+      navbar.style.padding = '1rem 5%';
     }
   });
-}, { threshold: 0.2 });
 
-revealElements.forEach(el => {
-  el.style.opacity = 0;
-  el.style.transform = 'translateY(40px)';
-  el.style.transition = 'all 0.8s ease';
-  observer.observe(el);
+  // Smooth scroll pour les liens
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
 });
-
