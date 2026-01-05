@@ -1,1 +1,145 @@
+:root {
+  --violet: #7b2cff;
+  --blue: #1e90ff;
+  --green: #00c896;
+  --red: #8b0000;
+  --dark: #0b0f1a;
+  --light: #ffffff;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  background: var(--dark);
+  color: var(--light);
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: rgba(0,0,0,0.6);
+}
+
+.navbar a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.btn-nav {
+  background: var(--violet);
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+/* HERO */
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.bot-hero {
+  background: linear-gradient(135deg, var(--violet), var(--blue));
+}
+
+.premium-hero {
+  background: linear-gradient(135deg, var(--red), black);
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.alt-bg {
+  background: rgba(255,255,255,0.03);
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* BADGES */
+.badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.badge.free {
+  background: var(--green);
+}
+
+.badge.premium {
+  background: var(--red);
+}
+
+/* FEATURES */
+.features {
+  list-style: none;
+}
+
+.features li {
+  margin: 10px 0;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: var(--violet);
+  padding: 14px 26px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+/* PRICING */
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 30px;
+}
+
+.price-card {
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.price-card.free {
+  background: linear-gradient(135deg,var(--green),black);
+}
+
+.price-card.premium {
+  background: linear-gradient(135deg,var(--red),black);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  opacity: 0.6;
+}
