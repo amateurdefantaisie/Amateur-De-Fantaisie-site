@@ -2,39 +2,103 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Tarifs | Amateur De Fantaisie</title>
+  <title>Tarifs - ⛩️ Amateur De Fantaisie</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <header class="navbar">
+    <div class="logo">⛩️ Amateur De Fantaisie</div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="bots/index.html">Bots</a>
+      <a href="services/index.html">Services</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="contact.html" class="btn-nav">Contact</a>
+    </nav>
+  </header>
 
-<header class="navbar">
-  <div class="logo">⛩️ Amateur De Fantaisie</div>
-  <nav>
-    <a href="index.html">Accueil</a>
-    <a href="bots/index.html">Bots</a>
-    <a href="services/index.html">Services</a>
-    <a href="contact.html" class="btn-nav">Contact</a>
-  </nav>
-</header>
+  <section class="hero">
+    <h1 data-aos="fade-up">Tarifs Transparents</h1>
+    <p data-aos="fade-up" data-aos-delay="150">Choisis le plan parfait pour toi</p>
+  </section>
 
-<section class="section">
-  <h1>Tarifs</h1>
-
-  <div class="pricing">
-    <div class="price-card free">
-      <h2>Gratuit</h2>
-      <p>Bots simples</p>
-      <ul>
-        <li>Alice 2.0</li>
-        <li>SEN-BETA</li>
-        <li>Déploiement inclus</li>
-      </ul>
+  <section class="section pricing-section">
+    <div class="pricing-tabs">
+      <button class="tab-btn active" data-tab="mensuel">Mensuel</button>
+      <button class="tab-btn" data-tab="annuel">Annuel (-20%)</button>
     </div>
 
-    <div class="price-card premium">
-      <h2>Premium</h2>
+    <div class="pricing-cards" data-aos="fade-up" data-aos-delay="150">
+      <div class="pricing-card" data-plan="gratuit">
+        <div class="pricing-header">
+          <h3>Starter</h3>
+          <span class="badge free">Gratuit</span>
+        </div>
+        <div class="price">
+          <span class="amount">0€</span>
+          <span class="period">/mois</span>
+        </div>
+        <ul>
+          <li>1 Bot Discord</li>
+          <li>12h/jour hébergement</li>
+          <li>Support email</li>
+        </ul>
+        <a href="contact.html" class="btn-primary">Commencer Gratuitement</a>
+      </div>
+
+      <div class="pricing-card popular" data-plan="premium">
+        <div class="pricing-header">
+          <h3>Premium</h3>
+          <span class="badge popular">Populaire</span>
+        </div>
+        <div class="price">
+          <span class="amount">49€</span>
+          <span class="period">/mois</span>
+        </div>
+        <ul>
+          <li>✅ 5 Bots multi-plateformes</li>
+          <li>✅ Hébergement 24/7</li>
+          <li>✅ Support Discord prioritaire</li>
+          <li>✅ Mises à jour auto</li>
+          <li>✅ Stats avancées</li>
+        </ul>
+        <a href="contact.html" class="btn-primary">Choisir Premium</a>
+      </div>
+
+      <div class="pricing-card" data-plan="enterprise">
+        <div class="pricing-header">
+          <h3>Entreprise</h3>
+        </div>
+        <div class="price">
+          <span class="amount">149€</span>
+          <span class="period">/mois</span>
+        </div>
+        <ul>
+          <li>✅ Bots illimités</li>
+          <li>✅ Serveur dédié</li>
+          <li>✅ Support 24/7</li>
+          <li>✅ API personnalisée</li>
+          <li>✅ Formation équipe</li>
+        </ul>
+        <a href="contact.html" class="btn-primary">Demander démo</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2026 ⛩️ Amateur De Fantaisie</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/integrations.js"></script>
+</body>
+</html>      <h2>Premium</h2>
       <p>Bots avancés</p>
       <ul>
         <li>Zokou-MD</li>
